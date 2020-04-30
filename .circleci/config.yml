@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  primeiro:
+    steps:
+      - run: echo "Funciona"
+
+workflows:
+  primeiro_flow:
+  version: 2
+  jobs:
+    - primeiro
