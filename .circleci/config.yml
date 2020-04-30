@@ -1,11 +1,13 @@
 version: 2
 jobs:
   primeiro:
+    docker:
+      - image: circleci/ruby:2.4.1
     steps:
       - run: echo "Funciona"
 
 workflows:
-  primeiro_flow:
   version: 2
-  jobs:
-    - primeiro
+  primeiro_flow:
+    jobs:
+      - primeiro
