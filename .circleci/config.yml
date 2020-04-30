@@ -1,8 +1,8 @@
 version: 2
 jobs:
   primeiro:
-    #docker:
-    #  - image: circleci/ruby:2.4.1
+    docker:
+      - image: circleci/ruby:2.4.1
     steps:
       - run: echo "Funciona"
 
