@@ -1,6 +1,8 @@
 version: 2
 jobs:
   primeiro:
+    docker:
+      - image: circleci/python 
     steps:
       - run: echo "Funciona"
 
