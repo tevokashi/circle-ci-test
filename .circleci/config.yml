@@ -11,6 +11,6 @@ workflows:
   primeiro_flow:
     jobs:
       - primeiro:
-        filter:
+        filters:
           branches:
             only: master
