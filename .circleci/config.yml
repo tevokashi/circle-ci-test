@@ -10,4 +10,7 @@ workflows:
   version: 2
   primeiro_flow:
     jobs:
-      - primeiro
+      - primeiro:
+        filters:
+          branches:
+            only: master
