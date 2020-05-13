@@ -5,7 +5,7 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - run: echo "Funciona"
-  sgundo:
+  segundo:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
