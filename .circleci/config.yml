@@ -5,12 +5,25 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - run: echo "Funciona"
+  sgundo:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      -run: echo "Ainda funciona"
 
 workflows:
   version: 2
-  primeiro_flow:
+  build:
     jobs:
       - primeiro:
-        filters:
-          branches:
-            only: master
+          filters:
+            branches:
+              only:
+              - master
+      - segundo:
+          requires:
+          - primeiro
+          filters:
+            branches:
+              only:
+              - master
