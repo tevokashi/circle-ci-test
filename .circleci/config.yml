@@ -9,7 +9,7 @@ jobs:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
-      -run: echo "Ainda funciona"
+      - run: echo "Ainda funciona"
 
 workflows:
   version: 2
